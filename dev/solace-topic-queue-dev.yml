@@ -1,0 +1,19 @@
+solace:
+  host: tcp://localhost:55554
+  username: admin
+  password: admin
+  vpnName: default
+  queues:
+    - name: DEV.ORS.V1
+      topics:
+        - DEV/ors/v1/created
+        - DEV/ors/success/v1/created
+        - DEV/ors/failure/v1/created
+    - name: DEV.OPS.V1
+      topics:
+        - DEV/ops/v1/created
+        - DEV/ops/success/v1/created
+        - DEV/ops/failure/v1/created
+    - name: DEV.OCS.V1
+      topics:
+        - DEV/ocs/success/v1/created
